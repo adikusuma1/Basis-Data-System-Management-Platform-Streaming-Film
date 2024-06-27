@@ -1,0 +1,31 @@
+CREATE TABLE episode (
+id_episode VARCHAR(8) NOT NULL PRIMARY KEY,
+id_film VARCHAR(5),
+durasi_episode INT(10),
+file_video VARCHAR(255),
+FOREIGN KEY(id_film) REFERENCES film(id_film));
+
+INSERT INTO episode(id_film, id_episode, durasi_episode, file_video)
+VALUES ('SA177','KNYS101',24,'path/SA/KNYS1/EP01/file_video.mp4'),
+		 ('SA177','KNYS102',24,'path/SA/KNYS1/EP02/file_video.mp4'),
+		 ('SA177','KNYS201',24,'path/SA/KNYS2/EP01/file_video.mp4'),
+		 ('SA177','KNYS202',24,'path/SA/KNYS2/EP02/file_video.mp4'),
+		 ('SA177','KNYS301',24,'path/SA/KNYS3/EP01/file_video.mp4'),
+		 ('SA177','KNYS302',24,'path/SA/KNYS3/EP02/file_video.mp4'),
+		 ('MN099','DSMOM01',120,'path/MN/DSMOM/EP01/file_video.mp4'),
+		 ('MA787','JJK001',120,'path/MA/JJK0/EP01/file_video.mp4'),
+		 ('SN777','GFNWS101',45,'path/SN/GFNWS1/EP01/file_video.mp4'),
+		 ('SN777','GFNWS102',45,'path/SN/GFNWS1/EP02/file_video.mp4'),
+		 ('SN777','GFNWS201',45,'path/SN/GFNWS2/EP01/file_video.mp4'),
+		 ('SN777','GFNWS202',45,'path/SN/GFNWS2/EP02/file_video.mp4'),
+		 ('MN378','SNWH01',120,'path/MN/SNWH/EP01/file_video.mp4'),
+		 ('SN245','LKS101',45,'path/SN/LKS1/EP01/file_video.mp4'),
+		 ('SN245','LKS102',45,'path/SN/LKS1/EP02/file_video.mp4'),
+		 ('SN245','LKS201',45,'path/SN/LKS2/EP01/file_video.mp4'),
+		 ('SN245','LKS202',45,'path/SN/LKS2/EP02/file_video.mp4'),
+		 ('MN023','TLT001',120,'path/MN/TLT/EP01/file_video.mp4'),
+		 ('MA421','PNY001',120,'path/MA/PNY/EP01/file_video.mp4'),
+		 ('MK120','KP3001',120,'path/MK/KP3/EP01/file_video.mp4'),
+		 ('SK023','BLSS101',75,'path/SK/BLSS1/EP01/file_video.mp4'),
+		 ('SK023','BLSS102',75,'path/SK/BLSS1/EP02/file_video.mp4'),
+		 ('SK023','BLSS103',75,'path/SK/BLSS1/EP03/file_video.mp4');
